@@ -87,7 +87,7 @@ public class XMLIndexer implements Indexer {
 
 		if (retDoc != null) {
 			
-			Resource resource = new ClassPathResource(rootDir + "/" + props.getProperty(retDoc.getName()));
+			Resource resource = new ClassPathResource(rootDir + "/responses/" + props.getProperty(retDoc.getName()));
 			
 			List<String> lines = Files.readAllLines(Paths.get(resource.getURI())); 
 

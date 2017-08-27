@@ -16,7 +16,7 @@ public class MockService {
 	@PostConstruct
 	public void init() {
 
-		indexer = new XMLIndexer("docs");
+		indexer = new XMLIndexer("docs/requests");
 		try {
 			indexer.runIndex();
 		} catch (Exception e) {

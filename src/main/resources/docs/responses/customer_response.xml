@@ -1,0 +1,4 @@
+<GetCustomerInfo xmlns="http://tempUri.org/" >
+  <CustomerID xsi:nil="true" />
+  <OutputParam />
+</GetCustomerInfo>
