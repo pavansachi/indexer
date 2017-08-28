@@ -7,6 +7,7 @@ import javax.annotation.PostConstruct;
 import org.springframework.stereotype.Service;
 
 import com.model.Document;
+import com.model.MockResponse;
 
 @Service
 public class MockService {
@@ -16,15 +17,19 @@ public class MockService {
 	@PostConstruct
 	public void init() {
 
-		indexer = new XMLIndexer("docs");
+		// read the mapping json
+		
+		indexer = new XMLIndexer();
+		
 		try {
 			indexer.runIndex();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		
 	}
 
-	public String process(String request) throws IOException {
+	public MockResponse process(String request) throws IOException {
 
 		Document searchDoc = indexer.getIndexDoc(request);
 
