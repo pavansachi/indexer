@@ -42,7 +42,7 @@ public class XMLIndexer implements Indexer {
 
 		System.out.println(props);
 		
-		Resource resource2 = new ClassPathResource(rootDir);
+		Resource resource2 = new ClassPathResource(rootDir + "/requests");
 		File fileDir = resource2.getFile();
 
 		FilenameFilter filter = new FilenameFilter() {
@@ -91,7 +91,7 @@ public class XMLIndexer implements Indexer {
 			
 			List<String> lines = Files.readAllLines(Paths.get(resource.getURI())); 
 
-			String response = lines.stream().collect(Collectors.joining(","));
+			String response = lines.stream().collect(Collectors.joining(""));
 
 			return response;
 		}
