@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://cisco.com/mwtm">
+	<soapenv:Body>
+		<soapenv:Fault xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+			<faultcode>soapenv:Server</faultcode>
+			<faultstring>UNEXPECTED_ERROR</faultstring>
+			<detail>
+				<ns1:APIStatus>
+					<StatusCode>1000</StatusCode>
+					<Message>UNEXPECTED_ERROR : test </Message>
+				</ns1:APIStatus>
+			</detail>
+		</soapenv:Fault>
+	</soapenv:Body>
+</soapenv:Envelope>

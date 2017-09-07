@@ -11,6 +11,11 @@ import org.xml.sax.helpers.DefaultHandler;
 
 import com.model.Document;
 
+/**
+ * Sax parser for xml
+ * @author pavansachi
+ *
+ */
 public class XMLSaxParser {
 
 	public void parse(InputStream stream, Document doc) {

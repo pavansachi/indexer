@@ -4,7 +4,7 @@
    <SOAP-ENV:Body xmlns:m="http://www.xyz.org/quotation" >
 	
       <m:GetQuotationResponse>
-         <m:Quotation>Here is the quotation</m:Quotation>
+         <m:Quotation>100.0</m:Quotation>
       </m:GetQuotationResponse>
 		
    </SOAP-ENV:Body>

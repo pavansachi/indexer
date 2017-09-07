@@ -1,5 +1,10 @@
 package com.model;
 
+/**
+ * a key value based index model
+ * @author pavansachi
+ *
+ */
 public class Index {
 
 	String key;

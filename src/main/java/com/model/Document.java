@@ -4,6 +4,11 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+/**
+ * a comparable document
+ * @author pavansachi
+ *
+ */
 public class Document implements Comparable<Document> {
 
 	public Document() {

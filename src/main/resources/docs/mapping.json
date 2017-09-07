@@ -1,32 +1,62 @@
 [
 	{
-		"path": "/search",
-		"request": {
-			"resource":"stocks.xml"
-		},
-		"response": {
-			"status": 200,
-			"resource": "stock_response.xml"
-		} 
+		"path": "stock",
+		"resources": [
+			{
+				"request": {
+					"resource":"stocks.xml"
+				},
+				"response": {
+					"status": 200,
+					"resource": "stock_response.xml"
+				} 		
+			}
+		]
 	},
 	{
-		"path": "/customer",
-		"request": {
-			"resource":"customer_request.xml"
-		},
-		"response": {
-			"status": 200,
-			"resource": "customer_response.xml"
-		} 
+		"path": "event",
+		"resources": [
+			{
+				"request": {
+					"resource":"event.xml"
+				},
+				"response": {
+					"status": 200,
+					"resource": "event_response.xml"
+				} 		
+			},
+			{
+				"request": {
+					"resource":"event2.xml"
+				},
+				"response": {
+					"status": 500,
+					"resource": "event_fault_response.xml"
+				} 		
+			}
+		]
 	},
 	{
-		"path": "/customer",
-		"request": {
-			"resource":"customer_request1.xml"
-		},
-		"response": {
-			"status": 500,
-			"resource": "customer_response.xml"
-		} 
+		"path": "customer",
+		"resources": [
+			{
+				"request": {
+					"resource":"customer_request.xml"
+				},
+				"response": {
+					"status": 200,
+					"resource": "customer_response.xml"
+				}
+			},
+			{
+				"request": {
+					"resource":"customer_request1.xml"
+				},
+				"response": {
+					"status": 500,
+					"resource": "customer_response.xml"
+				} 
+			}
+		]
 	}
 ]

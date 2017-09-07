@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://cisco.com/mwtm">
+	<soapenv:Body>
+		<ans:getNoteResponse xmlns:ans="http://cisco.com/mwtm">
+			<note>An example note</note>
+		</ans:getNoteResponse>
+	</soapenv:Body>
+</soapenv:Envelope>
